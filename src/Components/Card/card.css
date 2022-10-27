@@ -1,0 +1,27 @@
+.card{
+    margin: 40px;
+    width: 627px;
+    height: 360px;
+    overflow-y: hidden;
+    background: rgba(70, 70, 95, 0.4);
+    backdrop-filter: blur(5 px);
+    border-radius: 30px;
+}
+
+.card-image{
+    height: 360px;
+    width: 250px;
+}
+
+.hidden .card-image{
+    border-radius: 30px;
+}
+
+.hidden .content-section{
+    display: none;
+}
+
+.hidden{
+    background: transparent;
+    width: 250px;
+}
