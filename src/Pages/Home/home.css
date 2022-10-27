@@ -1,7 +1,12 @@
 
-*{
-    overflow-x: hidden;
+body::-webkit-scrollbar {
+  display: none;
 }
+
+body{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
 .home{
     background-color: #000;
@@ -11,12 +16,14 @@
     z-index: 10px;
 }
 
-.logo{
+.logo, .search{
     overflow-y: hidden;
+    cursor: pointer;
 }
 
 .nav-hamburger{
     overflow-y: hidden;
+    cursor: pointer;
 }
 
 .top-section {
@@ -29,11 +36,16 @@
     width: 100%;
 }
 
-.body-section{
+.ellipse-section{
     display: flex;
     justify-content: space-between;
     height: 200vh;
+    overflow-x: hidden;
+}
+
+.body-section{
     width: 1430px;
+
 }
 
 .leftblur{
@@ -56,8 +68,7 @@
     background: rgba(221, 25, 126, 0.4);
     filter: blur(95.6383px);
     border-radius: 50%;
-    clip-path:polygon(36% 25% ,120% 25% ,120% 120% ,36% 120%);
-    z-index: 1;
+    /* clip-path:polygon(36% 25% ,120% 25% ,120% 120% ,36% 120%); */
 }
 
 .purple-ellipse{
@@ -67,10 +78,8 @@
     height: 815px;
     background: rgba(10, 10, 101, 0.4);
     filter: blur(91.9605px);
-    z-index: -1;
     border-radius: 50%;
-    clip-path:polygon(-20% 0% ,70% -20% ,70% 120% ,0% 120%);
-    z-index: 1;
+    /* clip-path:polygon(-20% -20% ,70% -20% ,70% 140% ,-20% 140%); */
 }
 
 .top-text-wrapper{
@@ -114,3 +123,51 @@
     background: linear-gradient(92.09deg, #DD197E 0%, #1A0F43 100%);
     border: 0;
 }
+
+.genre-bar{
+    position: absolute;
+    left: 410px;
+    top: 560px;
+    display: flex;
+    width: 1000px;
+    height: 80px;
+    z-index: 5;
+    background: linear-gradient(90.23deg, rgba(255, 255, 255, 0.192) 0%, rgba(255, 255, 255, 0.048) 101.26%);
+    backdrop-filter: blur(23.5px);
+    border-radius: 32px 0px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.genre{
+    padding: 5px;
+    font-size: 25px;
+    margin: 10px;
+    color: white;
+}
+
+.gactive{
+    border-bottom: 2px solid #DD197E;
+}
+
+.rec-tre-wrapper{
+    position: absolute;
+    top: 700px;
+    margin-left: 100px;
+}
+
+.rec-h1 , .tre-h1{
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.rec-list , .tre-list{
+    display: flex;
+    width: 1330px;
+}
+
+.rec-list::-webkit-scrollbar {
+    display: none;
+  }

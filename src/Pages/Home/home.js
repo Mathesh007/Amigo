@@ -2,6 +2,7 @@ import React from 'react'
 import './home.css'
 import banner from '../../Images/MainBanner.jpg'
 import Navbar from '../../Components/Navbar/Navbar'
+import Card from '../../Components/Card/Card'
 
 function home() {
 
@@ -36,8 +37,40 @@ function home() {
       </div>
       <div className='home-body'>
         <div className='body-section'>
-          <div className='pink-ellipse'></div>
-          <div className='purple-ellipse'></div>
+          <div className='ellipse-section'>
+            <div className='pink-ellipse'></div>
+            <div className='purple-ellipse'></div>
+          </div>
+          <div className='genre-bar'>
+            <div className='genre gactive'>All</div>
+            <div className='genre'>Action</div>
+            <div className='genre'>Adventure</div>
+            <div className='genre'>Comedy</div>
+            <div className='genre'>Fantasy</div>
+            <div className='genre'>Romance</div>
+            <div className='genre'>Sci-fi</div>
+            <div className='genre'>Thriller</div>
+          </div>
+          <div className='rec-tre-wrapper'>
+            <div className='recommended'>
+              <h1 className='rec-h1'>Recommended For You</h1>
+              <div className='rec-list'>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+              </div>
+            </div>
+            <div className='trending'>
+              <h1 className='tre-h1'>Trending</h1>
+              <div className='tre-list'>
+                <Card/>
+                <Card/>
+                <Card/>
+                <Card/>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
