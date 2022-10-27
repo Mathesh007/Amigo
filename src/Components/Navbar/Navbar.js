@@ -1,5 +1,6 @@
 import React from 'react'
 import './Navbar.css'
+import logo from '../../Images/Amigo-Logo(PNG).png'
 import {GiHamburgerMenu} from 'react-icons/gi'
 import {BsSearch} from 'react-icons/bs'
 import {useState} from 'react'
@@ -19,7 +20,7 @@ function Navbar() {
     <div className='navbar'>
         <div className='nav-contents'>
             <div className='logo'>
-
+                <img src={logo}/>
             </div>
             <div className={!hisActive?'nav-item':'nav-item active'} onClick = {hhandleClick}>
                 Home
