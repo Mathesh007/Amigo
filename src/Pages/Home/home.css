@@ -126,7 +126,7 @@ body{
 
 .genre-bar{
     position: absolute;
-    left: 410px;
+    margin-left: 250px;
     top: 560px;
     display: flex;
     width: 1000px;
