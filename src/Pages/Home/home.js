@@ -55,19 +55,19 @@ function home() {
             <div className='recommended'>
               <h1 className='rec-h1'>Recommended For You</h1>
               <div className='rec-list'>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+                <Card no={0}/>
+                <Card no={1}/>
+                <Card no={2}/>
+                <Card no={3}/>
               </div>
             </div>
             <div className='trending'>
               <h1 className='tre-h1'>Trending</h1>
               <div className='tre-list'>
-                <Card/>
-                <Card/>
-                <Card/>
-                <Card/>
+                <Card no={4}/>
+                <Card no={5}/>
+                <Card no={6}/>
+                <Card no={7}/>
               </div>
             </div>
           </div>
