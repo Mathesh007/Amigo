@@ -4,8 +4,8 @@ body::-webkit-scrollbar {
 }
 
 body{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 
 .home{
@@ -14,6 +14,7 @@ body{
     justify-content: center;
     box-shadow: 0px 5px 5px 5px #160123;
     z-index: 10px;
+    margin: 0px 10px 0px 10px;
 }
 
 .logo, .search{
@@ -39,7 +40,7 @@ body{
 .ellipse-section{
     display: flex;
     justify-content: space-between;
-    height: 200vh;
+    height: 180vh;
     overflow-x: hidden;
 }
 
@@ -126,7 +127,8 @@ body{
 
 .genre-bar{
     position: absolute;
-    margin-left: 250px;
+
+    margin-left: 200px;
     top: 560px;
     display: flex;
     width: 1000px;
@@ -165,9 +167,15 @@ body{
 
 .rec-list , .tre-list{
     display: flex;
-    width: 1330px;
+    justify-content: left;
+    width: auto;
 }
 
 .rec-list::-webkit-scrollbar {
     display: none;
+  }
+
+  .recommended , .trending {
+    width: 1330px;
+    overflow-x: auto;
   }

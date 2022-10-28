@@ -6,22 +6,33 @@
     background: rgba(70, 70, 95, 0.4);
     backdrop-filter: blur(5 px);
     border-radius: 30px;
+    overflow-x: hidden;
+    display: flex;
+    align-items: center;
 }
 
 .card-image{
     height: 360px;
     width: 250px;
+    overflow-x: hidden;
 }
 
-.hidden .card-image{
+.hidden.card-image{
     border-radius: 30px;
 }
 
-.hidden .content-section{
+.hidden.content-section{
     display: none;
 }
 
 .hidden{
     background: transparent;
     width: 250px;
+}
+
+.content-section{
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    font-family: serif;
 }
