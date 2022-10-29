@@ -7,14 +7,28 @@ import {useState} from 'react'
 
 function Navbar() {
 
-    const [hisActive,hsetIsActive]=useState(false);
-    const hhandleClick = ()=>hsetIsActive(!hisActive);
+    const [hisActive,hsetIsActive]=useState(true);
+    const hhandleClick = ()=>{
+        hsetIsActive(true);
+        msetIsActive(false);
+        ssetIsActive(false);
+    }
 
     const [misActive,msetIsActive]=useState(false);
-    const mhandleClick = ()=>msetIsActive(!misActive);
+    const mhandleClick = ()=>{
+        msetIsActive(true);
+        hsetIsActive(false)
+        ssetIsActive(false)
+    }
+
 
     const [sisActive,ssetIsActive]=useState(false);
-    const shandleClick = ()=>ssetIsActive(!sisActive);
+    const shandleClick = ()=>{
+        ssetIsActive(true);
+        msetIsActive(false)
+        hsetIsActive(false)
+    }
+
 
   return (
     <div className='navbar'>
@@ -38,6 +52,9 @@ function Navbar() {
             </div>
             <div className='nav-hamburger'>
                 <GiHamburgerMenu className='hamburger'/>
+                <div className='ham-section'>
+                    
+                </div>
             </div>
         </div>    
     </div>

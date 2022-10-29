@@ -3,11 +3,22 @@ import './home.css'
 import banner from '../../Images/MainBanner.jpg'
 import Navbar from '../../Components/Navbar/Navbar'
 import Card from '../../Components/Card/Card'
+import {useState} from 'react'
 
 function home() {
 
   let top_h1="Avengers Infinity War";
   let top_text="The Avengers must stop Thanos, an intergalactic warlord, from getting his hands on all the infinity stones. However, Thanos is prepared to go to any lengths to carry out his insane plan."
+
+  const [isWatch,setIsWatch] = useState(true);
+
+  const handleWatch = ()=>{
+    setIsWatch(true);
+  }
+
+  const notHandleWatch = () => {
+    setIsWatch(false)
+  }
 
   return (
     <>
@@ -25,10 +36,10 @@ function home() {
               {top_text}
             </div>
             <div className='top-submit'>
-              <div className='watchnow hactive'>
+              <div className={isWatch?'watchnow hactive':'watchnow'} onClick={handleWatch}>
                 Watch Now
               </div>
-              <div className='explore'>
+              <div className={!isWatch?'explore hactive':'explore'} onClick={notHandleWatch}>
                 Explore
               </div>
             </div>
