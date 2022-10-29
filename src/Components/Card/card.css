@@ -9,6 +9,7 @@
     overflow-x: hidden;
     display: flex;
     align-items: center;
+    transition: width 0.3s;
 }
 
 .card-image{
@@ -23,6 +24,8 @@
 
 .hidden.content-section{
     display: none;
+    color: transparent;
+    font-size: 0px;
 }
 
 .hidden{
@@ -35,4 +38,6 @@
     font-size: 20px;
     padding: 15px;
     font-family: serif;
+    transform: color 0.3s ;
 }
+
