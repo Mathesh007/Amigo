@@ -1,15 +1,9 @@
-    body {
-        margin: 0;
-        overflow: hidden;
-    }
-    
     .Login_container {
         display: flex;
         justify-content: center;
         flex-direction: column;
         height: 100vh;
         align-items: center;
-        background: #1E1E1E;
         background-size: cover;
     }
     
@@ -86,7 +80,7 @@
         background: none;
     }
     
-    h1 {
+    .login-btn {
         text-align: center;
         font-family: cursive;
         color: #FFFFFF;
@@ -116,7 +110,7 @@
         width: 140px;
         height: 0px;
         left: 15px;
-        top: 340px;
+        top: 305px;
         border: 1px solid #FFFFFF;
     }
     
@@ -125,7 +119,7 @@
         width: 140px;
         height: 0px;
         left: 180px;
-        top: 340px;
+        top: 305px;
         border: 1px solid #FFFFFF;
     }
     
