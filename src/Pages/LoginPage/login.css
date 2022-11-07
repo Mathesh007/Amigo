@@ -110,33 +110,3 @@
         text-align: center;
         color: white;
     }
-    
-    .line1 {
-        position: absolute;
-        width: 140px;
-        height: 0px;
-        left: 15px;
-        top: 340px;
-        border: 1px solid #FFFFFF;
-    }
-    
-    .line2 {
-        position: absolute;
-        width: 140px;
-        height: 0px;
-        left: 180px;
-        top: 340px;
-        border: 1px solid #FFFFFF;
-    }
-    
-    .t {
-        text-align: center;
-        color: white;
-        font-size: 12px;
-    }
-    
-    .t1 {
-        text-align: center;
-        color: white;
-        font-size: 12px;
-    }

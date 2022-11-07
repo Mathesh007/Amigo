@@ -18,7 +18,7 @@ function login() {
         }
     };
     return ( <>
-        <div className = "Login_container" >
+       <div className = "Login_container" >
         <img src = { logo }
         alt = ""
         style = { styles.img }
@@ -56,8 +56,9 @@ function login() {
         <a href = "https://accounts.google.com" className="t ">Log in with Google account</a> 
         <br/>
         
-        < div className = "t1" > Don 't have an account? Sign up</div> 
-        </div > 
+        < div className = "t1" > Don 't have an account? <a onclick>Sign up</a></div> 
+        </div >  
+        
         </>
     )
 }
