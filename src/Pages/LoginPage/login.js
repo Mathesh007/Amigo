@@ -2,6 +2,7 @@ import React from 'react';
 import './login.css';
 import { useState } from "react";
 import logo from '../../Images/Amigo-Logo(PNG).png';
+import {Link} from 'react-router-dom'
 
 function login() {
     const [open, setOpen] = useState(false)
@@ -35,7 +36,7 @@ function login() {
 
         <div className = "Login_popup"
         style = { styles.Login_popup }>
-        <h1 > Login </h1>  
+        <h1 className='login-btn'> Login </h1>  
         <input type = "text"
         className = "ip"
         placeholder = "Username"/>
@@ -47,7 +48,12 @@ function login() {
         <br/>
         <br/>
         <br/>
-        <button className = "Login_popbtn" > Login </button>  
+        <Link to="/home">
+        <button className = "Login_popbtn">
+                Login 
+        </button>  
+        </Link>
+            
         <br/>
         <div className = "line1" > </div> 
         <div className = "txt" > OR </div> 
