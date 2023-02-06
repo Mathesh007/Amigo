@@ -110,7 +110,7 @@
         width: 140px;
         height: 0px;
         left: 15px;
-        top: 305px;
+        top: 340px;
         border: 1px solid #FFFFFF;
     }
     
@@ -119,7 +119,7 @@
         width: 140px;
         height: 0px;
         left: 180px;
-        top: 305px;
+        top: 340px;
         border: 1px solid #FFFFFF;
     }
     
@@ -127,10 +127,12 @@
         text-align: center;
         color: white;
         font-size: 12px;
+        text-decoration: none;
     }
     
     .t1 {
         text-align: center;
         color: white;
         font-size: 12px;
+        text-decoration: none;
     }
